@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="eng">
 <head>
-
+<meta charset="UTF-8">
   <title>To do list - Javascript</title>
   <link href="https:fonts.googleapis.com/css?family=Titillium+web" rel="stylesheet">
   <link href="css/Font-awesome.css" rel="stylesheet">
@@ -17,10 +17,16 @@
       <div id="date"></div>
       </div>
   <div class="content">
-    <ul id="List"></ul>
+    <ul id="List">
+    <li class="item">
+      <i class="fa fa-circle-thin-co" job="complete" id="0"></i>
+      <p class="text">drink coffee</p>
+      <i= class="fa fa-trash-o de" job="delete" id="0"></i>
+    </li>
+    </ul>
   </div>
-  <div class="Add-item">
-    <i= class="fa fa-plus-circle" aria-hidden="true"></i>
+  <div class="Add-to-do">
+    <i= class="fa fa-plus-circle"></i>
     <input type="text" id="item" placeholder="Add a to-do">
   </div>
 </body>
