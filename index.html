@@ -1,34 +1,41 @@
 <!DOCTYPE html>
 <html lang="eng">
-<head>
-<meta charset="UTF-8">
-  <title>To do list - Javascript</title>
-  <link href="https:fonts.googleapis.com/css?family=Titillium+web" rel="stylesheet">
-  <link href="css/Font-awesome.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
-
-</head>
-<body>
-  <div class="container">
-    <div class="header">
-      <div class="clear">
-        <i class="fa fa-refresh" aria-hidden="true"></i>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To do list - Javascript</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Titillium+Web"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/font-awesome.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="clear">
+          <i class="fa fa-refresh" aria-hidden="true"></i>
+        </div>
+        <div id="date"></div>
       </div>
-      <div id="date"></div>
+      <div class="content">
+        <ul id="List">
+          <li class="item">
+            <i class="fa fa-circle-thin-co" job="complete" id="0"></i>
+            <p class="text">drink coffee</p>
+            <i class="fa fa-trash-o de" job="delete" id="0"></i>
+          </li>
+        </ul>
       </div>
-  <div class="content">
-    <ul id="List">
-    <li class="item">
-      <i class="fa fa-circle-thin-co" job="complete" id="0"></i>
-      <p class="text">drink coffee</p>
-      <i= class="fa fa-trash-o de" job="delete" id="0"></i>
-    </li>
-    </ul>
-  </div>
-  <div class="Add-to-do">
-    <i= class="fa fa-plus-circle"></i>
-    <input type="text" id="item" placeholder="Add a to-do">
-  </div>
-  <script>src="js/app.js"</script>
-</body>
+      <div class="add-to-do">
+        <i class="fa fa-plus-circle"></i>
+        <input type="text" id="item" placeholder="Add a to-do" />
+      </div>
+    </div>
+    <script>
+      src = "js/app.js";
+    </script>
+  </body>
 </html>
