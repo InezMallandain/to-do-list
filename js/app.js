@@ -58,18 +58,20 @@ function addToDo(todo, id, done, trash) {
 
 document.addEventListener("keyup", function (event) {
   if (event.key === "Enter") {
-    const toDo = input.value;
-    if (toDo) {
-      addToDo(toDo, id, false, false);
-    }
-    LIST.push({ name: toDo, id: id, done: false, trash: false });
-    saveList(LIST);
-    id++;
-
-    input.value = "";
+    handleAddToDo();
   }
 });
+function handleAddToDo() {
+  const toDo = input.value;
+  if (toDo) {
+    addToDo(toDo, id, false, false);
+  }
+  LIST.push({ name: toDo, id: id, done: false, trash: false });
+  saveList(LIST);
+  id++;
 
+  input.value = "";
+}
 function completeToDo(element) {
   element.classList.toggle(CHECK);
   element.classList.toggle(UNCHECK);
@@ -100,3 +102,7 @@ list.addEventListener("click", function (event) {
 function saveList(list) {
   localStorage.setItem("TODO", JSON.stringify(list));
 }
+
+document.getElementById("addButton").addEventListener("click", function () {
+  handleAddToDo();
+});
